@@ -1,0 +1,46 @@
+body{
+  height: 90vh;
+  background-image: url(../img/school.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.grid{
+  height: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.grid2{
+  width: 85%;
+  height: 55%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 2rem;
+}
+
+.s{
+  border-radius: 10px;
+
+}
+
+.s img{
+  width: 100%;
+  height: 100%;
+}
+
+.quinto{
+  background-color: purple;
+}
+
+.sexto{
+  background-color: blue;
+}
+
+.septimo{
+  background-color: red;
+}
