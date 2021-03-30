@@ -1,5 +1,6 @@
 body{
-  height: 90vh;
+  height: 95vh;
+  width: 100%;
   background-image: url(../img/school.jpg);
   background-position: center center;
   background-size: cover;
@@ -23,6 +24,12 @@ body{
   grid-column-gap: 2rem;
 }
 
+.grid3{
+  width: 45%;
+  height: 55%;
+  background-color: #6e1398;
+}
+
 .s{
   border-radius: 10px;
 
@@ -43,4 +50,11 @@ body{
 
 .septimo{
   background-color: red;
+}
+
+.copyright{
+  display: block;
+  justify-content: flex-end;
+  text-align: right;
+  margin-right: 2rem;
 }
