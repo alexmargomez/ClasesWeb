@@ -3,7 +3,11 @@
 body{
   height: 95vh;
   width: 100%;
-  background-color: violet;
+  background: url("../img/school.jpg") no-repeat center center fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 input{
@@ -123,11 +127,7 @@ button{
     height: 30px;
   }
 
-  .copyright{
-    display: flex;
-    justify-content: flex-start;
-    margin: 0px;
-  }
+
 
 }
 
