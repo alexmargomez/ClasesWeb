@@ -1,3 +1,8 @@
+html{
+  min-width: 1000px;
+}
+
+
 body{
   height: 95vh;
   width: 100%;
@@ -7,21 +12,29 @@ body{
 }
 
 .grid{
-  height: 100%;
+  min-height: 100%;
   margin-left: 2rem;
   margin-right: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .grid2{
-  width: 85%;
-  height: 55%;
+  width: calc(100% - 20px );
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-column-gap: 2rem;
+}
+
+@media screen and (max-width:1000px){
+   .grid2{
+     width: calc(100% - 30px );
+     display: grid;
+     grid-row: auto;
+
+
+   }
 }
 
 .grid3{
@@ -29,6 +42,8 @@ body{
   height: 55%;
   background-color: #6e1398;
 }
+
+
 
 .s{
   border-radius: 10px;
