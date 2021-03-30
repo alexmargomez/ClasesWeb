@@ -37,67 +37,7 @@ button{
 
 
 
-@media screen and (max-width:720px){
-  html{
-    min-width: 100%;
-  }
 
-  body{
-    min-height: 100vh;
-  }
-
-
-  .grid2{
-    display: block;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .es{
-    height: 200px;
-    margin-bottom: 20px;
-
-  }
-
-  .copyright{
-    display: none;
-    text-align: center;
-  }
-
-}
-
-@media screen and (max-width:510px){
-  input{
-    width: 350px;
-    height: 30px;
-    border-radius: 3%;
-    border: none;
-
-  }
-
-  button{
-    width: 350px;
-    height: 30px;
-  }
-
-}
-
-@media screen and (max-width:470px){
-  input{
-    width: 320px;
-    height: 30px;
-    border-radius: 3%;
-    border: none;
-
-  }
-
-  button{
-    width: 320px;
-    height: 30px;
-  }
-
-}
 
 .grid3{
   background-color: #6e1398;
@@ -130,7 +70,7 @@ button{
 }
 
 .copyright{
-  display: block;
+  display: flex;
   justify-content: flex-end;
   text-align: right;
   margin-right: 2rem;
@@ -147,5 +87,62 @@ button{
 
 .espaciado{
   padding-bottom: 30px;
+
+}
+
+
+@media screen and (max-width:720px){
+
+
+  .grid2{
+    display: block;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .es{
+    height: 200px;
+    margin-bottom: 20px;
+
+  }
+
+}
+
+@media screen and (max-width:510px){
+  input{
+    width: 350px;
+    height: 30px;
+    border-radius: 3%;
+    border: none;
+
+  }
+
+  button{
+    width: 350px;
+    height: 30px;
+  }
+
+  .copyright{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+  }
+
+}
+
+@media screen and (max-width:470px){
+  input{
+    width: 300px;
+    height: 30px;
+    border-radius: 3%;
+    border: none;
+
+  }
+
+  button{
+    width: 300px;
+    height: 30px;
+  }
 
 }
