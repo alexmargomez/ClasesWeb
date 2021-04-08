@@ -24,6 +24,7 @@ button{
   height: 40px;
 }
 
+
 .grid{
   height: 100%;
   margin-left: 2rem;
@@ -38,10 +39,6 @@ button{
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
-
-
-
-
 
 .grid3{
   background-color: #6e1398;
@@ -73,6 +70,7 @@ button{
   background-color: red;
 }
 
+
 .copyright{
   display: flex;
   justify-content: flex-end;
@@ -89,11 +87,28 @@ button{
   align-items: center;
 }
 
+.form-label a{
+  color: black;
+  text-decoration: none;
+}
+
 .espaciado{
   padding-bottom: 30px;
 
 }
 
+.quinto:hover{
+  width: 800px;
+  height: 500px;
+}
+.sexto:hover{
+  width: 800px;
+  height: 500px;
+}
+.septimo:hover{
+  width: 800px;
+  height: 500px;
+}
 
 @media screen and (max-width:720px){
 
@@ -145,4 +160,29 @@ button{
     height: 30px;
   }
 
+}
+
+/*prueba de talleres*/
+.numero{
+  color: white;
+  font-size: 4rem;
+}
+.list1{
+  background-color: #6e1398;
+  border: none;
+  width: 500px;
+  height: 300px;
+  box-shadow: 7px 7px 15px #592A08;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list{
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
