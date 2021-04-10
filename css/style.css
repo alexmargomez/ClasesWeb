@@ -20,7 +20,6 @@ input{
 
 button{
   width: 400px;
-  height: 30px;
   height: 40px;
 }
 
@@ -98,15 +97,15 @@ button{
 }
 
 .quinto:hover{
-  width: 800px;
+  width: 600px;
   height: 500px;
 }
 .sexto:hover{
-  width: 800px;
+  width: 600px;
   height: 500px;
 }
 .septimo:hover{
-  width: 800px;
+  width: 600px;
   height: 500px;
 }
 
@@ -185,4 +184,17 @@ button{
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.as{
+  width: 800px;
+}
+
+#h1s{
+  text-align: center;
+}
+
+#request{
+  width: 100%;
+  border-color: azure;
 }
