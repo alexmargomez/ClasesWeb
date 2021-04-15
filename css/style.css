@@ -188,6 +188,11 @@ button{
 
 .as{
   width: 800px;
+  background-color: #6e1398;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 10px;
+  color: white;
 }
 
 #h1s{

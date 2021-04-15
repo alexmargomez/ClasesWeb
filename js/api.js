@@ -2,24 +2,30 @@
 
 var btn = document.getElementById('request');
 var bio = document.getElementById('bio');
- 
-var request = new XMLHttpRequest();
- 
-request.onreadystatechange = function() {
-  if(request.readyState === 4) {
-    bio.style.border = '1px solid #e8e8e8';
-    if(request.status === 200) { 
-      bio.innerHTML = request.responseText;
-    } else {
-      bio.innerHTML = 'An error occurred during your request: ' +  request.status + ' ' + request.statusText;
-    } 
-  }
-}
- 
-request.open('Get', '../js/api.json');
- 
+
 btn.addEventListener('click', function() {
-  this.style.display = 'none';
+
+  var request = new XMLHttpRequest();
+  request.open('Get', '../js/api.json');
   request.send();
-  document.getElementById('h1s').innerHTML = "Recibir datos AJAX";
+
+  request.onreadystatechange = function() {
+    if(request.readyState === 4 && request.status === 200) {
+        let datos = JSON.parse(request.responseText);
+        bio.innerHTML = '';
+
+        for(let item of datos){
+          bio.innerHTML += `
+            <tr>
+              <td> ${item.name} </td>
+              <td> ${item.age}</td>
+            </tr>
+          `;
+        }
+
+    } else {
+        bio.innerHTML = 'An error occurred during your request: ' +  request.status + ' ' + request.statusText;
+    }
+  }
+  document.getElementById('h1s').innerHTML = "Datos recibidos AJAX";
 });
